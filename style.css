@@ -394,8 +394,14 @@ html {
     font-size: 0.8rem;
   }
   .tech-stack-item {
-    width: 90px;
+    width: 70px;
     font-size: 0.8rem;
+  }
+  .tech-stack-item img {
+    width: 3.6rem;
+  }
+  .tech-stack-item h4 {
+    font-size: 0.7rem;
   }
   .tech-stack-img {
     width: 48;
@@ -415,5 +421,8 @@ html {
     font-size: 0.6rem;
   }
 }
-@media (max-width: 330) {
+@media (max-width: 330px) {
+  .university li {
+    font-size: 0.54rem;
+  }
 }
