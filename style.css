@@ -551,10 +551,12 @@ textarea:focus {
   .desc {
     font-size: 0.7rem;
   }
-}
-@media (max-width: 400px) {
+  .tech-stack {
+    margin: 0 auto;
+    gap: 1rem;
+  }
   .tech-stack-item {
-    width: 100px;
+    width: 80px;
     font-size: 0.8rem;
   }
   .tech-stack-item h4 {
