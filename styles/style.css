@@ -10,6 +10,21 @@ html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #1589ef;
+  padding: 4px 8px;
+  border-radius: 50%;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
 .header {
   height: 100%;
   margin: 1rem 0 9rem 0;
