@@ -21,9 +21,12 @@ html {
   padding: 4px 8px;
   border-radius: 50%;
   color: #fff;
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
 }
 .hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 .header {
   height: 100%;
@@ -352,7 +355,7 @@ textarea:focus {
   transition: all 0.3s;
 }
 .submit-btn:hover {
-  outline: 2px solid #fff;
+  outline: 1px solid #fff;
   background-color: #228be6db;
   color: #fff;
 }
