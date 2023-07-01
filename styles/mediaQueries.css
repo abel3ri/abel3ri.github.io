@@ -142,8 +142,9 @@
     width: 4.8rem;
   }
   .projects-container {
-    grid-template-columns: 400px;
+    grid-template-columns: 15rem;
     place-items: center;
+    max-width: 100%;
   }
   .project:last-child {
     grid-column: 1;
@@ -152,10 +153,6 @@
   .project {
     width: 100%;
   }
-  .projects-container {
-    max-width: 100%;
-  }
-
   .project h1 {
     font-size: 0.8rem;
   }
