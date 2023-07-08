@@ -1,13 +1,3 @@
-const backToTopBtn = document.querySelector(".back-to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 150) {
-    backToTopBtn.classList.remove("hidden");
-  } else {
-    backToTopBtn.classList.add("hidden");
-  }
-});
-
 // Navigation func
 // Implement nav link hovering effect
 function navigationFunc() {
@@ -30,12 +20,23 @@ navigationFunc();
 function asideController() {
   const asideNav = document.querySelector(".aside-nav");
   const header = document.querySelector(".header");
-  const headerObserver = new IntersectionObserver((entries) => {
-    const [entry] = entries;
-    if (!entry.isIntersecting) {
-      asideNav.classList.remove("hidden");
-    } else asideNav.classList.add("hidden");
-  }, {});
+  const backToTopBtn = document.querySelector(".back-to-top");
+
+  const headerObserver = new IntersectionObserver(
+    (entries) => {
+      const [entry] = entries;
+      if (!entry.isIntersecting) {
+        asideNav.classList.remove("hidden");
+        backToTopBtn.classList.remove("hidden");
+      } else {
+        asideNav.classList.add("hidden");
+        backToTopBtn.classList.add("hidden");
+      }
+    },
+    {
+      rootMargin: "-100px",
+    }
+  );
 
   headerObserver.observe(header);
 }
