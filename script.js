@@ -26,3 +26,17 @@ function navigationFunc() {
   });
 }
 navigationFunc();
+
+function asideController() {
+  const asideNav = document.querySelector(".aside-nav");
+  const header = document.querySelector(".header");
+  const headerObserver = new IntersectionObserver((entries) => {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      asideNav.classList.remove("hidden");
+    } else asideNav.classList.add("hidden");
+  }, {});
+
+  headerObserver.observe(header);
+}
+asideController();

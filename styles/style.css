@@ -9,6 +9,7 @@
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  font-size: 12px;
 }
 
 .back-to-top {
@@ -24,13 +25,40 @@ html {
   transition: opacity 0.3s ease-in;
   opacity: 1;
 }
+/* Aside navigation */
+.aside-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  position: fixed;
+  width: 7rem;
+  height: 100vh;
+  background-color: #1589ef;
+
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.aside-nav h1 {
+  position: fixed;
+  top: 1.2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.aside-nav svg {
+  width: 3.6rem;
+  color: #fff;
+}
+.aside.hidden {
+  width: 0;
+}
 .hidden {
   opacity: 0;
   visibility: hidden;
 }
 .header {
   height: 100%;
-  margin: 1rem 0 9rem 0;
+  margin: 0rem 0 9rem 0;
 }
 /* Navigation */
 .nav {
@@ -71,7 +99,7 @@ html {
   height: 0.2rem;
   width: 100%;
 
-  background-color: #1a1a1db2;
+  background-color: #1589ef;
 
   transition: all 0.3s;
 }
@@ -244,7 +272,7 @@ html {
   background-color: #1a1a1d;
   max-width: 100vw;
   margin: 7rem 0;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 8rem;
   color: #fff;
   /* padding: 2rem; */
 }
@@ -303,7 +331,7 @@ html {
 
 #projects-section {
   margin: 7rem 0;
-  padding: 2rem;
+  padding: 0 2rem 2rem 8rem;
 }
 .projects-container {
   padding: 2rem;
