@@ -199,15 +199,17 @@
     </header>
     <!-- About section -->
     <section id="about-section">
-      <h1 class="about-title">A little bit about me</h1>
-      <p class="about-text">
-        Hello! I'm Abel Merete, a passionate and motivated student pursuing a
-        degree in Software Engineering. I have a deep love for technology and a
-        strong desire to create innovative solutions to real-world problems.
-        With a solid foundation in programming languages like Java, JavaScript,
-        and C++, I enjoy diving into complex coding challenges and finding
-        elegant solutions.
-      </p>
+      <div class="about-container">
+        <h1 class="about-title">A little bit about me</h1>
+        <p class="about-text">
+          Hello! I'm Abel Merete, a passionate and motivated student pursuing a
+          degree in Software Engineering. I have a deep love for technology and
+          a strong desire to create innovative solutions to real-world problems.
+          With a solid foundation in programming languages like Java,
+          JavaScript, and C++, I enjoy diving into complex coding challenges and
+          finding elegant solutions.
+        </p>
+      </div>
       <h2 class="tech-stack-text h2">My tech stack</h2>
       <div class="tech-stack">
         <div class="tech-stack-item">
@@ -357,7 +359,7 @@
       <div class="projects-container">
         <div class="project">
           <div class="project-imgs">
-            <!-- <img
+            <img
               src="../Images/Project-images/cms/cms_home.png"
               alt=""
               class="project-img"
@@ -366,12 +368,75 @@
               src="../Images/Project-images/cms/cms_how.png"
               alt=""
               class="project-img"
-            /> -->
+            />
           </div>
+          <p class="project-desc">
+            A clearance management system implemented using html, css,
+            javascript, and php. It was designed to enable students get thier
+            clearances without the need to go in person to collect all approval
+            signatures from approving offices.
+          </p>
+          <a
+            href="https://github.com/abel3ri/CMS"
+            class="project-learn-more-btn hidden"
+            target="_blank"
+            ><img
+              src="./Images/icons/Github_black.png"
+              alt="Github logo"
+              class="project-github-icon"
+            />
+            Learn more</a
+          >
         </div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <!-- <div class="project"></div> -->
+        <div class="project">
+          <div class="project-imgs">
+            <img
+              src="../Images/Project-images/vid/vid_home.png"
+              alt=""
+              class="project-img"
+            />
+            <img
+              src="../Images/Project-images/vid/vid_profile.png"
+              alt="Project-image"
+              class="project-img"
+            />
+          </div>
+          <p class="project-desc">
+            Simple vid streaming website built using php.
+          </p>
+          <a
+            href="https://github.com/abel3ri/vid_explorer"
+            class="project-learn-more-btn hidden"
+            target="_blank"
+            ><img
+              src="./Images/icons/Github_black.png"
+              alt="Github logo"
+              class="project-github-icon"
+            />
+            Learn more</a
+          >
+        </div>
+        <div class="project">
+          <div class="project-imgs">
+            <img
+              src="../Images/icons/flutter.svg"
+              alt="project image"
+              class="project-img"
+            />
+          </div>
+          <p class="project-desc">Basic calulator app built using flutter.</p>
+          <a
+            href="https://github.com/abel3ri/calc/tree/master"
+            class="project-learn-more-btn hidden"
+            target="_blank"
+            ><img
+              src="./Images/icons/Github_black.png"
+              alt="Github logo"
+              class="project-github-icon"
+            />
+            Learn more</a
+          >
+        </div>
       </div>
     </section>
     <!-- Contact section -->

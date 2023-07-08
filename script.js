@@ -41,3 +41,25 @@ function asideController() {
   headerObserver.observe(header);
 }
 asideController();
+
+function revealProjectBtn() {
+  const projectsSection = document.querySelector("#projects-section");
+  const projectBtns = document.querySelectorAll(".project-learn-more-btn");
+  const projectObserver = new IntersectionObserver(
+    (entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        projectBtns.forEach((btn) => {
+          btn.classList.remove("hidden");
+        });
+      }
+    },
+    {
+      rootMargin: "200px",
+      threshold: 0.6,
+    }
+  );
+  projectObserver.observe(projectsSection);
+}
+
+revealProjectBtn();
