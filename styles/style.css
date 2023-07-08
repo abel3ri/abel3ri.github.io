@@ -408,6 +408,21 @@ html {
 .project-learn-more-btn.hidden {
   transform: translateY(10rem);
 }
+.project {
+  opacity: 0;
+
+  transition: all 1s;
+}
+.project:nth-child(even) {
+  transform: translateX(100%);
+}
+.project:nth-child(odd) {
+  transform: translateX(-100%);
+}
+.project.visible {
+  opacity: 1;
+  transform: translate(0);
+}
 
 /* ************** */
 

@@ -42,8 +42,9 @@ function asideController() {
 }
 asideController();
 
-function revealProjectBtn() {
+function smoothRevealProject() {
   const projectsSection = document.querySelector("#projects-section");
+  const projects = document.querySelectorAll(".project");
   const projectBtns = document.querySelectorAll(".project-learn-more-btn");
   const projectObserver = new IntersectionObserver(
     (entries) => {
@@ -51,6 +52,9 @@ function revealProjectBtn() {
       if (entry.isIntersecting) {
         projectBtns.forEach((btn) => {
           btn.classList.remove("hidden");
+        });
+        projects.forEach((project) => {
+          project.classList.add("visible");
         });
       }
     },
@@ -62,4 +66,4 @@ function revealProjectBtn() {
   projectObserver.observe(projectsSection);
 }
 
-revealProjectBtn();
+smoothRevealProject();
