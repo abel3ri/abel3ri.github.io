@@ -59,8 +59,8 @@ function smoothRevealProject() {
       }
     },
     {
-      rootMargin: "200px",
-      threshold: 0.6,
+      rootMargin: "-50px",
+      threshold: 0.2,
     }
   );
   projectObserver.observe(projectsSection);
@@ -83,3 +83,27 @@ function mapController() {
 }
 
 mapController();
+
+function rotateArrows() {
+  const eduSection = document.querySelector("#education-section");
+
+  const arrows = document.querySelectorAll(".arrow");
+
+  const eduObserver = new IntersectionObserver(
+    (entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        arrows.forEach((arrow) => {
+          arrow.classList.add("rotate");
+        });
+      }
+    },
+    {
+      threshold: 0.3,
+      rootMargin: "-150px",
+    }
+  );
+  eduObserver.observe(eduSection);
+}
+
+rotateArrows();
