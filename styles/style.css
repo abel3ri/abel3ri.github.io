@@ -5,6 +5,7 @@
 
   --primary-color: #1589ef;
   --primary-shade: #228be6;
+  --secondary-color: #e03131;
 }
 
 * {
@@ -25,7 +26,7 @@ html {
   right: 5%;
   width: 3rem;
   height: 3rem;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 4px 8px;
   border-radius: 50%;
   color: #fff;
@@ -50,7 +51,7 @@ html {
   position: fixed;
   top: 1.2rem;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .aside-nav svg {
   width: 3.6rem;
@@ -84,6 +85,7 @@ html {
 }
 .logo {
   font-size: 1.6rem;
+  letter-spacing: 2px;
   color: var(--primary-shade);
 }
 .nav-items a:link,
@@ -126,7 +128,7 @@ html {
   border: 2px solid var(--primary-shade);
   color: #fff !important;
   background-color: var(--primary-shade);
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .contact-btn:hover {
   border: 2px solid var(--primary-shade);
@@ -429,6 +431,15 @@ html {
 }
 
 /* ************** */
+
+/* Map section */
+#map {
+  width: 80vw;
+  margin: 20rem auto 5rem auto;
+  height: 47rem;
+  border-radius: 10px;
+}
+/* ************ */
 
 /* Form section */
 

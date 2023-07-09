@@ -69,5 +69,17 @@ function smoothRevealProject() {
 smoothRevealProject();
 
 function mapController() {
-  const map = document.querySelectorAll("#map");
+  const coords = [9.68843, 39.544297];
+  const map = L.map("map", {
+    maxZoom: 13,
+  }).setView(coords, 13);
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  L.marker(coords).addTo(map).bindPopup("Hello 👋").openPopup();
 }
+
+mapController();
