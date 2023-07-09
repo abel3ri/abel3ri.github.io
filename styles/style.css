@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
 :root {
   --text-color: #868e96;
 
@@ -43,7 +44,7 @@ html {
   height: 100vh;
   background-color: var(--primary-color);
 
-  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .aside-nav h1 {
   position: fixed;
@@ -58,8 +59,9 @@ html {
 .aside.hidden {
   width: 0;
 }
-.hidden {
-  opacity: 0;
+.aside-nav.hidden {
+  /* opacity: 0; */
+  width: 0;
   visibility: hidden;
 }
 .header {
@@ -107,7 +109,7 @@ html {
 
   background-color: var(--primary-color);
 
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .link-underline.hidden {
   visibility: hidden;
@@ -341,6 +343,8 @@ html {
 #projects-section {
   margin: 7rem 0;
   padding: 0 2rem 2rem 8rem;
+
+  overflow: hidden;
 }
 .projects-container {
   display: flex;

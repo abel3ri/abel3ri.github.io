@@ -67,3 +67,7 @@ function smoothRevealProject() {
 }
 
 smoothRevealProject();
+
+function mapController() {
+  const map = document.querySelectorAll("#map");
+}
