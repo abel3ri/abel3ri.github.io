@@ -32,6 +32,8 @@ html {
   color: #fff;
   transition: opacity 0.3s ease-in;
   opacity: 1;
+
+  z-index: 100;
 }
 /* Aside navigation */
 .aside-nav {
