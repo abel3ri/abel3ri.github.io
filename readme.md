@@ -10,7 +10,6 @@ This is a repository for my personal portfolio website. It showcases my projects
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Demo
