@@ -5,21 +5,8 @@
   }
 }
 @media (max-width: 1035px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .project:last-child {
-    grid-column: span 2;
-    place-self: center;
-  }
-  .project:nth-child(even):hover {
-    transform: rotate(10deg);
-  }
-  .projects-container {
-    gap: 2rem;
-  }
   .project {
-    width: 20rem;
+    width: 90%;
   }
 }
 @media (max-width: 970px) {
@@ -29,9 +16,6 @@
   .about-text {
     font-size: 1rem;
     line-height: 1.9;
-  }
-  .project {
-    width: 20rem;
   }
 }
 
@@ -82,7 +66,14 @@
     width: 6rem;
   }
   .project {
-    max-width: 16rem;
+    width: 80%;
+    height: 28rem;
+  }
+  .project-desc {
+    font-size: 1rem;
+  }
+  .project-learn-more-btn:is(:link, :visited) {
+    width: 100%;
   }
 }
 @media (max-width: 710px) {
@@ -104,7 +95,7 @@
     font-size: 2.4rem;
   }
   .avatar-img-container img {
-    width: 90%;
+    width: 75%;
   }
   .class-level h2 {
     color: #fff;
@@ -113,21 +104,12 @@
   .arrow img {
     width: 60px;
   }
-  .project {
-    max-width: 14rem;
-  }
-  .project h1 {
-    font-size: 1rem;
-  }
-  .project p {
-    font-size: 0.8rem;
-  }
-  .form textarea {
-    width: 20rem;
-    font-family: "Poppins", sans-serif;
-  }
 }
 @media (max-width: 570px) {
+  .aside-nav {
+    width: 0;
+    visibility: hidden;
+  }
   .class-level h2 {
     color: #fff;
     font-size: 1.2rem;
@@ -150,14 +132,25 @@
     grid-column: 1;
     place-self: center;
   }
+  #education-section {
+    padding: 2rem;
+  }
+  #projects-section {
+    padding: 0 2rem;
+  }
   .project {
     width: 100%;
+    height: fit-content;
   }
-  .project h1 {
-    font-size: 0.8rem;
+  .project-imgs {
+    flex-direction: column;
   }
-  .project p {
-    font-size: 0.7rem;
+  .project-img {
+    width: 100%;
+  }
+  #map {
+    height: 40rem;
+    width: 95%;
   }
 }
 @media (max-width: 500px) {

@@ -60,14 +60,18 @@ html {
 .aside.hidden {
   width: 0;
 }
+.back-to-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .aside-nav.hidden {
-  /* opacity: 0; */
   width: 0;
   visibility: hidden;
 }
 .header {
   height: 100%;
-  margin: 0rem 0 9rem 0;
+  margin-bottom: 9rem;
+  padding: 0.3rem;
 }
 /* Navigation */
 .nav {
@@ -88,6 +92,7 @@ html {
   letter-spacing: 2px;
   color: var(--primary-shade);
 }
+
 .nav-items a:link,
 .nav-items a:visited {
   text-decoration: none;
@@ -380,6 +385,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  opacity: 0;
+  transition: all 1s;
 }
 .project-imgs {
   display: flex;
@@ -410,7 +418,7 @@ html {
   text-decoration: none;
   color: var(--primary-color);
 
-  max-width: 30%;
+  width: 30%;
 
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -422,11 +430,6 @@ html {
 }
 .project-learn-more-btn.hidden {
   transform: translateY(10rem);
-}
-.project {
-  opacity: 0;
-
-  transition: all 1s;
 }
 .project:nth-child(even) {
   transform: translateX(100%);

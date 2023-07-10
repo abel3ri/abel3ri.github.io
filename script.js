@@ -59,8 +59,8 @@ function smoothRevealProject() {
       }
     },
     {
-      rootMargin: "-50px",
-      threshold: 0.2,
+      rootMargin: "-30px",
+      threshold: 0.1,
     }
   );
   projectObserver.observe(projectsSection);
@@ -100,7 +100,7 @@ function rotateArrows() {
     },
     {
       threshold: 0.3,
-      rootMargin: "-150px",
+      rootMargin: "-50px",
     }
   );
   eduObserver.observe(eduSection);
