@@ -107,3 +107,24 @@ function rotateArrows() {
 }
 
 rotateArrows();
+
+function menuController() {
+  const menuBtn = document.querySelector(".menu");
+  const closeBtn = document.querySelector(".close");
+
+  const sideNav = document.querySelector(".aside-nav");
+
+  menuBtn.addEventListener("click", () => {
+    sideNav.classList.add("visible");
+    menuBtn.classList.add("hidden");
+    closeBtn.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menuBtn.classList.remove("hidden");
+    sideNav.classList.remove("visible");
+    closeBtn.classList.add("hidden");
+  });
+}
+
+menuController();

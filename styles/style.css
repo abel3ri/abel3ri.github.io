@@ -47,6 +47,17 @@ html {
 
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.aside-link:is(:link, :visited) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.3rem;
+
+  color: #fff;
+  text-decoration: none;
+}
 .aside-nav h1 {
   position: fixed;
   top: 1.2rem;
@@ -68,6 +79,9 @@ html {
   width: 0;
   visibility: hidden;
 }
+
+/* ************** */
+/* Header */
 .header {
   height: 100%;
   margin-bottom: 9rem;
@@ -149,7 +163,13 @@ html {
 
   /* height: 100%; */
 }
-.menu {
+.menu.hidden {
+  display: none;
+}
+.close {
+  width: 2.5rem;
+}
+.close.hidden {
   display: none;
 }
 

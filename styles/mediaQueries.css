@@ -77,6 +77,15 @@
   }
 }
 @media (max-width: 710px) {
+  .aside-nav {
+    width: 0;
+    visibility: hidden;
+  }
+  .aside-nav.visible {
+    width: 50vw;
+    visibility: visible;
+    z-index: 100;
+  }
   .nav-items {
     margin: 0 2rem;
   }
@@ -106,10 +115,6 @@
   }
 }
 @media (max-width: 570px) {
-  .aside-nav {
-    width: 0;
-    visibility: hidden;
-  }
   .class-level h2 {
     color: #fff;
     font-size: 1.2rem;
