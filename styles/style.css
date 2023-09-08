@@ -462,6 +462,7 @@ html {
 }
 .live-demo-btn {
   width: 2rem;
+  height: 2rem;
 }
 .project:nth-child(even) {
   transform: translateX(100%);
