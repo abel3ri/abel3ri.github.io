@@ -456,6 +456,13 @@ html {
 .project-learn-more-btn.hidden {
   transform: translateY(10rem);
 }
+.view-more {
+  display: flex;
+  align-items: center;
+}
+.live-demo-btn {
+  width: 2rem;
+}
 .project:nth-child(even) {
   transform: translateX(100%);
 }
